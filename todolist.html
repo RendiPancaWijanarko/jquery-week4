@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ToDo List App</title>
+
+        <!-- TDL STYLE -->
+        <link rel="stylesheet" href="assets\css\tdl_style.css">
+
+        <!-- TDL SCRIPT -->
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="assets\js\tdl_script.js"></script>
+    </head>
+
+    <body>
+        <section id="mainFeature">
+            <div class="container">
+                <h1>ToDo List</h1>
+                <div class="app">
+                    <input type="text" id="newTask" placeholder="Tambahkan tugas baru">
+                    <label for="taskCategory">Pilih Kategori</label>
+                    <select id="taskCategory" title="Pilih kategori tugas">
+                        <option value="" disable selected>Pilih Kategori</option>
+                        <option value="Personal">Personal</option>
+                        <option value="work">Work</option>
+                        <option value="study">Study</option>
+                    </select>
+                    <button id="addTask">Tambah</button>
+                    <br>
+                    <label for="sortTask">Urutkan Berdasarkan :</label>
+                    <select id="sortTask" title="Pilih kriteria pengurutan">
+                        <option value="text">Teks</option>
+                        <option value="category">Category</option>
+                    </select>
+                    <ul id="taskList">
+                       <!-- Isi todo list -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
